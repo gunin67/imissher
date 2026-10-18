@@ -1,0 +1,10 @@
+{
+  "name": "imissher",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install --prefix site",
+    "build": "npm --prefix site run build",
+    "dev": "npm --prefix site run dev -- --host 0.0.0.0",
+    "preview": "npm --prefix site run preview -- --host 0.0.0.0"
+  }
+}
