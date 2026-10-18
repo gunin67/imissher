@@ -1,0 +1,2 @@
+# SPA fallback: every route (/gaming, /about, …) serves index.html so deep links and refreshes work on Cloudflare.
+/*    /index.html   200

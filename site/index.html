@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Gunin Singh | Full-stack UI/UX Developer • Pro Gamer</title>
+    <meta name="description" content="Gunin Singh is a full-stack UI/UX web developer and professional gamer building polished digital experiences with gameplay instinct and visual precision." />
+    <meta name="author" content="Gunin Singh" />
+    <meta name="theme-color" content="#121212" />
+    <meta property="og:title" content="Gunin Singh | Full-stack UI/UX Developer • Pro Gamer" />
+    <meta property="og:description" content="Gameplay instinct, visual precision and clean product thinking — a portfolio you boot from a terminal." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@guninsingh" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Apply the saved theme/language before first paint (no flash of the wrong theme) -->
+    <script>
+      (function () {
+        try {
+          var r = document.documentElement;
+          var t = localStorage.getItem("portfolio-theme");
+          if (t === "gradient") t = "custom";
+          if (t !== "light" && t !== "dark" && t !== "custom") t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+          r.dataset.theme = t;
+          if (t !== "light") r.classList.add("dark");
+          r.style.colorScheme = t === "light" ? "light" : "dark";
+          var l = localStorage.getItem("portfolio-language");
+          if (l === "ne" || l === "hi") r.lang = l; else if (l === "zh") r.lang = "zh-CN";
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+SC:wght@400;600&display=swap"
+    />
+  </head>
+
+  <body>
+    <noscript><p style="font-family:system-ui;padding:2rem">Gunin Singh — Full-stack UI/UX Developer &amp; Pro Gamer. This site needs JavaScript. Contact: rockstarjaynin@gmail.com</p></noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
